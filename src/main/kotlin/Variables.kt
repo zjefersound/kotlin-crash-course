@@ -1,0 +1,3 @@
+fun variables() {
+    println("variables")
+}
