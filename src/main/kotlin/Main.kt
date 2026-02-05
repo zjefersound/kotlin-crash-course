@@ -6,7 +6,7 @@ fun main() {
 
 
     // Redefinable variables
-    var name = "Jeferson"
+    var name : String = "Jeferson"
 
 
     println(name)
@@ -54,6 +54,34 @@ fun main() {
 
     // logical operations
 
+    println("logical operators:")
+    val isCEven = c % 2 == 0.toDouble()
+    println(isCEven)
 
+    val isAEven = a % 2 == 0
+    println(isAEven)
+
+    val isBothEven = isAEven && isCEven
+    println(isBothEven)
+
+    val isOneEven = isAEven || isCEven
+    println("isOneEven: $isOneEven")
+
+    // priority of logical operators (like math)
+    // 1. &&
+    // 2. ||
+
+    var logical = true && false || true
+
+    println("logical = $logical")
+
+    logical = logical && false
+    println("logical = $logical")
+
+    // Input:
+
+    println("Input your username:")
+    var username = readln()
+    println(username)
 
 }
