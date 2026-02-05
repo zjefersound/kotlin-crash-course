@@ -20,4 +20,12 @@ fun main() {
     var email = readln() ?: (name + "@gmail.com")
 
     println(email)
+
+    // Null safety:
+    // - Did not exist with java, however it's pretty similar to JS
+    // - Crazy stuff over here LOL
+    // Nullable + increment + module
+    var weight = readln().toIntOrNull()?.inc()?.rem(2)?.equals(0)
+    print(weight)
+
 }
